@@ -31,6 +31,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.основноеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.коэффициентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.просмотрИзменитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -98,17 +100,6 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.checkBox27 = new System.Windows.Forms.CheckBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.checkBox29 = new System.Windows.Forms.CheckBox();
-            this.checkBox30 = new System.Windows.Forms.CheckBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.checkBox31 = new System.Windows.Forms.CheckBox();
             this.checkBox32 = new System.Windows.Forms.CheckBox();
@@ -150,7 +141,6 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -161,10 +151,11 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.основноеToolStripMenuItem,
-            this.коэффициентыToolStripMenuItem});
+            this.коэффициентыToolStripMenuItem,
+            this.оПрограммеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1136, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(962, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,9 +167,24 @@
             // 
             // коэффициентыToolStripMenuItem
             // 
+            this.коэффициентыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.просмотрИзменитьToolStripMenuItem});
             this.коэффициентыToolStripMenuItem.Name = "коэффициентыToolStripMenuItem";
             this.коэффициентыToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
             this.коэффициентыToolStripMenuItem.Text = "Коэффициенты";
+            // 
+            // просмотрИзменитьToolStripMenuItem
+            // 
+            this.просмотрИзменитьToolStripMenuItem.Name = "просмотрИзменитьToolStripMenuItem";
+            this.просмотрИзменитьToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.просмотрИзменитьToolStripMenuItem.Text = "Просмотр/Изменить";
+            this.просмотрИзменитьToolStripMenuItem.Click += new System.EventHandler(this.просмотрИзменитьToolStripMenuItem_Click);
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // label1
             // 
@@ -309,9 +315,9 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(12, 430);
+            this.groupBox2.Location = new System.Drawing.Point(594, 322);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(307, 203);
+            this.groupBox2.Size = new System.Drawing.Size(340, 201);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Каркас (двухэтажный дом с мансардным этажом)";
@@ -319,7 +325,7 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(277, 166);
+            this.checkBox6.Location = new System.Drawing.Point(315, 166);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(15, 14);
             this.checkBox6.TabIndex = 17;
@@ -328,7 +334,7 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(277, 138);
+            this.checkBox5.Location = new System.Drawing.Point(315, 138);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(15, 14);
             this.checkBox5.TabIndex = 16;
@@ -337,7 +343,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(277, 110);
+            this.checkBox4.Location = new System.Drawing.Point(315, 110);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 15;
@@ -346,7 +352,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(277, 82);
+            this.checkBox3.Location = new System.Drawing.Point(315, 82);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 14;
@@ -355,7 +361,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(277, 54);
+            this.checkBox2.Location = new System.Drawing.Point(315, 54);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 13;
@@ -364,7 +370,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(277, 26);
+            this.checkBox1.Location = new System.Drawing.Point(315, 26);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 12;
@@ -645,9 +651,9 @@
             this.groupBox4.Controls.Add(this.label23);
             this.groupBox4.Controls.Add(this.label24);
             this.groupBox4.Controls.Add(this.label25);
-            this.groupBox4.Location = new System.Drawing.Point(930, 436);
+            this.groupBox4.Location = new System.Drawing.Point(3, 322);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(183, 170);
+            this.groupBox4.Size = new System.Drawing.Size(263, 201);
             this.groupBox4.TabIndex = 18;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Кровля";
@@ -655,7 +661,7 @@
             // checkBox14
             // 
             this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(153, 138);
+            this.checkBox14.Location = new System.Drawing.Point(237, 179);
             this.checkBox14.Name = "checkBox14";
             this.checkBox14.Size = new System.Drawing.Size(15, 14);
             this.checkBox14.TabIndex = 16;
@@ -664,7 +670,7 @@
             // checkBox15
             // 
             this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(153, 110);
+            this.checkBox15.Location = new System.Drawing.Point(237, 141);
             this.checkBox15.Name = "checkBox15";
             this.checkBox15.Size = new System.Drawing.Size(15, 14);
             this.checkBox15.TabIndex = 15;
@@ -673,7 +679,7 @@
             // checkBox16
             // 
             this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(153, 82);
+            this.checkBox16.Location = new System.Drawing.Point(237, 103);
             this.checkBox16.Name = "checkBox16";
             this.checkBox16.Size = new System.Drawing.Size(15, 14);
             this.checkBox16.TabIndex = 14;
@@ -682,7 +688,7 @@
             // checkBox17
             // 
             this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(153, 54);
+            this.checkBox17.Location = new System.Drawing.Point(237, 65);
             this.checkBox17.Name = "checkBox17";
             this.checkBox17.Size = new System.Drawing.Size(15, 14);
             this.checkBox17.TabIndex = 13;
@@ -691,7 +697,7 @@
             // checkBox18
             // 
             this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(153, 26);
+            this.checkBox18.Location = new System.Drawing.Point(237, 27);
             this.checkBox18.Name = "checkBox18";
             this.checkBox18.Size = new System.Drawing.Size(15, 14);
             this.checkBox18.TabIndex = 12;
@@ -700,7 +706,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(15, 139);
+            this.label21.Location = new System.Drawing.Point(15, 179);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(118, 13);
             this.label21.TabIndex = 7;
@@ -709,7 +715,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(15, 111);
+            this.label22.Location = new System.Drawing.Point(15, 141);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(116, 13);
             this.label22.TabIndex = 6;
@@ -718,7 +724,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(15, 83);
+            this.label23.Location = new System.Drawing.Point(15, 103);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(95, 13);
             this.label23.TabIndex = 2;
@@ -727,7 +733,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(15, 55);
+            this.label24.Location = new System.Drawing.Point(15, 65);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(110, 13);
             this.label24.TabIndex = 1;
@@ -760,7 +766,7 @@
             // checkBox21
             // 
             this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(231, 80);
+            this.checkBox21.Location = new System.Drawing.Point(238, 81);
             this.checkBox21.Name = "checkBox21";
             this.checkBox21.Size = new System.Drawing.Size(15, 14);
             this.checkBox21.TabIndex = 8;
@@ -769,7 +775,7 @@
             // checkBox20
             // 
             this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(231, 53);
+            this.checkBox20.Location = new System.Drawing.Point(238, 54);
             this.checkBox20.Name = "checkBox20";
             this.checkBox20.Size = new System.Drawing.Size(15, 14);
             this.checkBox20.TabIndex = 7;
@@ -778,7 +784,7 @@
             // checkBox19
             // 
             this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(231, 26);
+            this.checkBox19.Location = new System.Drawing.Point(238, 27);
             this.checkBox19.Name = "checkBox19";
             this.checkBox19.Size = new System.Drawing.Size(15, 14);
             this.checkBox19.TabIndex = 6;
@@ -817,7 +823,7 @@
             this.groupBox6.Controls.Add(this.label34);
             this.groupBox6.Location = new System.Drawing.Point(12, 368);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(263, 56);
+            this.groupBox6.Size = new System.Drawing.Size(263, 62);
             this.groupBox6.TabIndex = 9;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Окна, двери";
@@ -825,7 +831,7 @@
             // checkBox27
             // 
             this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(231, 26);
+            this.checkBox27.Location = new System.Drawing.Point(237, 29);
             this.checkBox27.Name = "checkBox27";
             this.checkBox27.Size = new System.Drawing.Size(15, 14);
             this.checkBox27.TabIndex = 6;
@@ -834,120 +840,11 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(15, 27);
+            this.label34.Location = new System.Drawing.Point(15, 30);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(124, 13);
             this.label34.TabIndex = 0;
             this.label34.Text = "Окна, двери  из ПВХ ⍰";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.checkBox13);
-            this.groupBox7.Controls.Add(this.checkBox26);
-            this.groupBox7.Controls.Add(this.checkBox28);
-            this.groupBox7.Controls.Add(this.checkBox29);
-            this.groupBox7.Controls.Add(this.checkBox30);
-            this.groupBox7.Controls.Add(this.label20);
-            this.groupBox7.Controls.Add(this.label33);
-            this.groupBox7.Controls.Add(this.label35);
-            this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Controls.Add(this.label37);
-            this.groupBox7.Location = new System.Drawing.Point(617, 436);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(307, 170);
-            this.groupBox7.TabIndex = 19;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Внутренние сети";
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(268, 138);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(15, 14);
-            this.checkBox13.TabIndex = 16;
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(268, 110);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(15, 14);
-            this.checkBox26.TabIndex = 15;
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // checkBox28
-            // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(268, 82);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(15, 14);
-            this.checkBox28.TabIndex = 14;
-            this.checkBox28.UseVisualStyleBackColor = true;
-            // 
-            // checkBox29
-            // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(268, 54);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(15, 14);
-            this.checkBox29.TabIndex = 13;
-            this.checkBox29.UseVisualStyleBackColor = true;
-            // 
-            // checkBox30
-            // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.Location = new System.Drawing.Point(268, 26);
-            this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(15, 14);
-            this.checkBox30.TabIndex = 12;
-            this.checkBox30.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(15, 139);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(280, 13);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "Вентиляция (Установка воздуховодов, вентиляторов)";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(15, 111);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(272, 13);
-            this.label33.TabIndex = 6;
-            this.label33.Text = "Отопление (Установка электрических конвекторов)";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(15, 83);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(272, 13);
-            this.label35.TabIndex = 2;
-            this.label35.Text = "Отопление (Прокладка труб, установка радиаторов)";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(15, 55);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(408, 13);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "Водопровод и канализация (Прокладка труб, без установки сантех. Приборов)";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(15, 27);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(397, 13);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Электроснабжение (Прокладка кабелей, установка розеток, выключателей)";
             // 
             // groupBox8
             // 
@@ -961,9 +858,9 @@
             this.groupBox8.Controls.Add(this.label40);
             this.groupBox8.Controls.Add(this.label41);
             this.groupBox8.Controls.Add(this.label42);
-            this.groupBox8.Location = new System.Drawing.Point(316, 318);
+            this.groupBox8.Location = new System.Drawing.Point(272, 322);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(283, 170);
+            this.groupBox8.Size = new System.Drawing.Size(312, 201);
             this.groupBox8.TabIndex = 20;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Внутренние сети";
@@ -971,7 +868,7 @@
             // checkBox31
             // 
             this.checkBox31.AutoSize = true;
-            this.checkBox31.Location = new System.Drawing.Point(253, 138);
+            this.checkBox31.Location = new System.Drawing.Point(280, 171);
             this.checkBox31.Name = "checkBox31";
             this.checkBox31.Size = new System.Drawing.Size(15, 14);
             this.checkBox31.TabIndex = 16;
@@ -980,7 +877,7 @@
             // checkBox32
             // 
             this.checkBox32.AutoSize = true;
-            this.checkBox32.Location = new System.Drawing.Point(253, 110);
+            this.checkBox32.Location = new System.Drawing.Point(280, 135);
             this.checkBox32.Name = "checkBox32";
             this.checkBox32.Size = new System.Drawing.Size(15, 14);
             this.checkBox32.TabIndex = 15;
@@ -989,7 +886,7 @@
             // checkBox33
             // 
             this.checkBox33.AutoSize = true;
-            this.checkBox33.Location = new System.Drawing.Point(253, 82);
+            this.checkBox33.Location = new System.Drawing.Point(280, 99);
             this.checkBox33.Name = "checkBox33";
             this.checkBox33.Size = new System.Drawing.Size(15, 14);
             this.checkBox33.TabIndex = 14;
@@ -998,7 +895,7 @@
             // checkBox34
             // 
             this.checkBox34.AutoSize = true;
-            this.checkBox34.Location = new System.Drawing.Point(253, 54);
+            this.checkBox34.Location = new System.Drawing.Point(280, 63);
             this.checkBox34.Name = "checkBox34";
             this.checkBox34.Size = new System.Drawing.Size(15, 14);
             this.checkBox34.TabIndex = 13;
@@ -1007,7 +904,7 @@
             // checkBox35
             // 
             this.checkBox35.AutoSize = true;
-            this.checkBox35.Location = new System.Drawing.Point(253, 26);
+            this.checkBox35.Location = new System.Drawing.Point(280, 27);
             this.checkBox35.Name = "checkBox35";
             this.checkBox35.Size = new System.Drawing.Size(15, 14);
             this.checkBox35.TabIndex = 12;
@@ -1016,7 +913,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(15, 139);
+            this.label38.Location = new System.Drawing.Point(15, 171);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(229, 13);
             this.label38.TabIndex = 7;
@@ -1025,7 +922,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(15, 111);
+            this.label39.Location = new System.Drawing.Point(15, 135);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(141, 13);
             this.label39.TabIndex = 6;
@@ -1034,7 +931,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(15, 83);
+            this.label40.Location = new System.Drawing.Point(15, 99);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(177, 13);
             this.label40.TabIndex = 2;
@@ -1043,7 +940,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(15, 55);
+            this.label41.Location = new System.Drawing.Point(15, 63);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(158, 13);
             this.label41.TabIndex = 1;
@@ -1082,7 +979,7 @@
             this.groupBox9.Controls.Add(this.label52);
             this.groupBox9.Location = new System.Drawing.Point(599, 130);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(398, 300);
+            this.groupBox9.Size = new System.Drawing.Size(344, 300);
             this.groupBox9.TabIndex = 26;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Внутренняя отделка \"под ключ\"";
@@ -1090,7 +987,7 @@
             // checkBox36
             // 
             this.checkBox36.AutoSize = true;
-            this.checkBox36.Location = new System.Drawing.Point(364, 269);
+            this.checkBox36.Location = new System.Drawing.Point(319, 269);
             this.checkBox36.Name = "checkBox36";
             this.checkBox36.Size = new System.Drawing.Size(15, 14);
             this.checkBox36.TabIndex = 25;
@@ -1099,7 +996,7 @@
             // checkBox37
             // 
             this.checkBox37.AutoSize = true;
-            this.checkBox37.Location = new System.Drawing.Point(364, 242);
+            this.checkBox37.Location = new System.Drawing.Point(319, 242);
             this.checkBox37.Name = "checkBox37";
             this.checkBox37.Size = new System.Drawing.Size(15, 14);
             this.checkBox37.TabIndex = 24;
@@ -1108,7 +1005,7 @@
             // checkBox38
             // 
             this.checkBox38.AutoSize = true;
-            this.checkBox38.Location = new System.Drawing.Point(364, 215);
+            this.checkBox38.Location = new System.Drawing.Point(319, 215);
             this.checkBox38.Name = "checkBox38";
             this.checkBox38.Size = new System.Drawing.Size(15, 14);
             this.checkBox38.TabIndex = 23;
@@ -1117,7 +1014,7 @@
             // checkBox39
             // 
             this.checkBox39.AutoSize = true;
-            this.checkBox39.Location = new System.Drawing.Point(364, 188);
+            this.checkBox39.Location = new System.Drawing.Point(319, 188);
             this.checkBox39.Name = "checkBox39";
             this.checkBox39.Size = new System.Drawing.Size(15, 14);
             this.checkBox39.TabIndex = 22;
@@ -1162,7 +1059,7 @@
             // checkBox40
             // 
             this.checkBox40.AutoSize = true;
-            this.checkBox40.Location = new System.Drawing.Point(364, 161);
+            this.checkBox40.Location = new System.Drawing.Point(319, 161);
             this.checkBox40.Name = "checkBox40";
             this.checkBox40.Size = new System.Drawing.Size(15, 14);
             this.checkBox40.TabIndex = 17;
@@ -1171,7 +1068,7 @@
             // checkBox41
             // 
             this.checkBox41.AutoSize = true;
-            this.checkBox41.Location = new System.Drawing.Point(364, 134);
+            this.checkBox41.Location = new System.Drawing.Point(319, 134);
             this.checkBox41.Name = "checkBox41";
             this.checkBox41.Size = new System.Drawing.Size(15, 14);
             this.checkBox41.TabIndex = 16;
@@ -1180,7 +1077,7 @@
             // checkBox42
             // 
             this.checkBox42.AutoSize = true;
-            this.checkBox42.Location = new System.Drawing.Point(364, 107);
+            this.checkBox42.Location = new System.Drawing.Point(319, 107);
             this.checkBox42.Name = "checkBox42";
             this.checkBox42.Size = new System.Drawing.Size(15, 14);
             this.checkBox42.TabIndex = 15;
@@ -1189,7 +1086,7 @@
             // checkBox43
             // 
             this.checkBox43.AutoSize = true;
-            this.checkBox43.Location = new System.Drawing.Point(364, 80);
+            this.checkBox43.Location = new System.Drawing.Point(319, 80);
             this.checkBox43.Name = "checkBox43";
             this.checkBox43.Size = new System.Drawing.Size(15, 14);
             this.checkBox43.TabIndex = 14;
@@ -1198,7 +1095,7 @@
             // checkBox44
             // 
             this.checkBox44.AutoSize = true;
-            this.checkBox44.Location = new System.Drawing.Point(364, 53);
+            this.checkBox44.Location = new System.Drawing.Point(319, 53);
             this.checkBox44.Name = "checkBox44";
             this.checkBox44.Size = new System.Drawing.Size(15, 14);
             this.checkBox44.TabIndex = 13;
@@ -1207,7 +1104,7 @@
             // checkBox45
             // 
             this.checkBox45.AutoSize = true;
-            this.checkBox45.Location = new System.Drawing.Point(364, 26);
+            this.checkBox45.Location = new System.Drawing.Point(319, 26);
             this.checkBox45.Name = "checkBox45";
             this.checkBox45.Size = new System.Drawing.Size(15, 14);
             this.checkBox45.TabIndex = 12;
@@ -1270,12 +1167,14 @@
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.groupBox8);
+            this.groupBox10.Controls.Add(this.groupBox4);
+            this.groupBox10.Controls.Add(this.groupBox2);
             this.groupBox10.Location = new System.Drawing.Point(9, 114);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1115, 529);
+            this.groupBox10.Size = new System.Drawing.Size(942, 529);
             this.groupBox10.TabIndex = 27;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "groupBox10";
+            this.groupBox10.Text = "Расценка на строительство жилого дома";
             // 
             // groupBox11
             // 
@@ -1284,7 +1183,7 @@
             this.groupBox11.Controls.Add(this.label3);
             this.groupBox11.Controls.Add(this.label7);
             this.groupBox11.Controls.Add(this.textBox1);
-            this.groupBox11.Location = new System.Drawing.Point(553, 12);
+            this.groupBox11.Location = new System.Drawing.Point(380, 27);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(571, 97);
             this.groupBox11.TabIndex = 28;
@@ -1295,14 +1194,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 653);
+            this.ClientSize = new System.Drawing.Size(962, 653);
             this.Controls.Add(this.groupBox9);
-            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox10);
@@ -1325,8 +1221,6 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
@@ -1411,17 +1305,6 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.CheckBox checkBox27;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox26;
-        private System.Windows.Forms.CheckBox checkBox28;
-        private System.Windows.Forms.CheckBox checkBox29;
-        private System.Windows.Forms.CheckBox checkBox30;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.CheckBox checkBox31;
         private System.Windows.Forms.CheckBox checkBox32;
@@ -1456,6 +1339,8 @@
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem просмотрИзменитьToolStripMenuItem;
     }
 }
 
