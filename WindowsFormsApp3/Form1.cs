@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LabTexInf;
 
 namespace WindowsFormsApp3
 {
@@ -15,37 +16,34 @@ namespace WindowsFormsApp3
         public Form1()
         {
             InitializeComponent();
-
         }
-        private ToolTip t = new ToolTip();
-
         public void LabelText() {
-            t.SetToolTip(label4, "Устройство фундамента  (монолитная, ж/б плита с пазами, ребрами) армированного.\r\nБетон В15, Сетки из арматурной стали А-III  диаметром 6, 14 мм. \r\nУтепление фундамента и полов 1 эт. (Высота фундамента 300-350мм)");
-            t.SetToolTip(label5, "Устройство фундамента  (монолитная, ж/б плита с пазами, ребрами) армированного.\r\nБетон В15, Сетки из арматурной стали А-III  диаметром 6, 14 мм. \r\nУтепление фундамента и полов 1 эт. (Высота фундамента 450-500мм)");
-            t.SetToolTip(label6, "Устройство фундамента  (буронабивные сваи, монолитная, ж/б плита с пазами, ребрами) армированного.\r\nБетон В15, Сетки из арматурной стали А-III  диаметром 6, 14 мм.\r\nУтепление фундамента и полов 1 эт. (Высота фундамента 450-500мм)");
-            t.SetToolTip(label28, "Дополнительное утепление 50 мм наружных стен по обрешетке");
-            t.SetToolTip(label27, "Обшивка стен, потолков ГКЛ 12,5 мм с устройством пароизоляции");
-            t.SetToolTip(label26, "Обшивка стен, потолков вагонкой с огнебиозащитой и покраской, с устройством пароизоляции");
-            t.SetToolTip(label34, "Окна, двери из ПВХ - профилей 'Exprof', металлические входные двери");
-            t.SetToolTip(label45, "Установка сантехники(раковина, унитаз, душ.поддон) включая установку сифонов и смесителей");
-            t.SetToolTip(label42, "Электроснабжение(Прокладка кабелей, установка розеток, выключателей)");
-            t.SetToolTip(label38, "Вентиляция (Установка воздуховодов, вентиляторов)");
-            t.SetToolTip(label39, "Отопление (Установка электрических конвекторов)");
-            t.SetToolTip(label40, "Отопление (Прокладка труб, установка радиаторов)");
-            t.SetToolTip(label41, "Водопровод и канализация (Прокладка труб, без установки сантех. Приборов)");
-            t.SetToolTip(label14, "Наружная отделка (виниловый сайдинг SAYGA)");
-            t.SetToolTip(label32, "Наружная отделка (цокольный сайдинг hand-cut-stone)");
-            t.SetToolTip(label31, "Наружная отделка (облицовка желтым и коричневым кирпичом)");
-            t.SetToolTip(label30, "Устройство цоколя (цокольный сайдинг)");
-            t.SetToolTip(label12, "Обшивка наружных стен ВНУТРИ (теплозвукоизоляционная плита «ISOPLAAT» 12мм)");
-            t.SetToolTip(label13, "Обшивка наружных стен СНАРУЖИ (Фасадная ветрозащита\r\nтеплозвукоизоляционная плита «ISOPLAAT» 25мм)");
-            t.SetToolTip(label10, "Конструкции каркаса стен (Наружные 150мм,  внутренние 100мм), Конструкции перекрытия,\r\nстропильная система. Без утепления и обшивки стен, перекрытий");
-            t.SetToolTip(label8, "Обшивка наружных стен СНАРУЖИ OSB 9мм");
-            t.SetToolTip(label9, "Утепление каркаса  (Наружные 150мм,  внутренние 100мм),Перекрытие 150мм, Кровля 200мм.\r\nТермо плита 037");
-            t.SetToolTip(label25, "Мягкая черепица Шинглас КАДРИЛЬ соната (корич.)");
-            t.SetToolTip(label24, "Металлочерепица Монтерей");
-            t.SetToolTip(label23, "Софит (сайдинг перфорированный)");
-            t.SetToolTip(label22, "Софит (деревянный, открытого типа)");
+            toolTip1.SetToolTip(label4, LabelTextInfo.DesLabel4);
+            toolTip1.SetToolTip(label5, LabelTextInfo.DesLabel5);
+            toolTip1.SetToolTip(label6, LabelTextInfo.DesLabel6);
+            toolTip1.SetToolTip(label28, LabelTextInfo.DesLabel28);
+            toolTip1.SetToolTip(label27, LabelTextInfo.DesLabel27);
+            toolTip1.SetToolTip(label26, LabelTextInfo.DesLabel26);
+            toolTip1.SetToolTip(label34, LabelTextInfo.DesLabel34);
+            toolTip1.SetToolTip(label45, LabelTextInfo.DesLabel45);
+            toolTip1.SetToolTip(label42, LabelTextInfo.DesLabel42);
+            toolTip1.SetToolTip(label38, LabelTextInfo.DesLabel38);
+            toolTip1.SetToolTip(label39, LabelTextInfo.DesLabel39);
+            toolTip1.SetToolTip(label40, LabelTextInfo.DesLabel40);
+            toolTip1.SetToolTip(label41, LabelTextInfo.DesLabel41);
+            toolTip1.SetToolTip(label14, LabelTextInfo.DesLabel14);
+            toolTip1.SetToolTip(label32, LabelTextInfo.DesLabel32);
+            toolTip1.SetToolTip(label31, LabelTextInfo.DesLabel31);
+            toolTip1.SetToolTip(label30, LabelTextInfo.DesLabel30);
+            toolTip1.SetToolTip(label12, LabelTextInfo.DesLabel12);
+            toolTip1.SetToolTip(label13, LabelTextInfo.DesLabel13);
+            toolTip1.SetToolTip(label10, LabelTextInfo.DesLabel10);
+            toolTip1.SetToolTip(label8, LabelTextInfo.DesLabel8);
+            toolTip1.SetToolTip(label9, LabelTextInfo.DesLabel9);
+            toolTip1.SetToolTip(label25, LabelTextInfo.DesLabel25);
+            toolTip1.SetToolTip(label24, LabelTextInfo.DesLabel24);
+            toolTip1.SetToolTip(label23, LabelTextInfo.DesLabel23);
+            toolTip1.SetToolTip(label22, LabelTextInfo.DesLabel22);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -58,24 +56,11 @@ namespace WindowsFormsApp3
         }
         private int sum;
         private void SumAll(int i) {
-            //sum += i;
-            //checkBox19.Checked ? 
         }
-        /*private void коэффициентыToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InitializeComponent();
-
-        }
-        */
         private void просмотрИзменитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            Form2 dlg = new Form2();
-            dlg.ShowDialog(this);
-            //Form2 formK = new Form2();
-            //formK.Show();
-            //new 
+            Form2 Сoeffic = new Form2();
+            Сoeffic.ShowDialog(this);
         }
     }
-
 }

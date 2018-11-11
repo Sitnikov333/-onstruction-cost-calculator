@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.основноеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.коэффициентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,6 +135,7 @@
             this.label52 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1190,6 +1192,9 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "groupBox11";
             // 
+            // toolTip1
+            // 
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1341,6 +1346,7 @@
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem просмотрИзменитьToolStripMenuItem;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
