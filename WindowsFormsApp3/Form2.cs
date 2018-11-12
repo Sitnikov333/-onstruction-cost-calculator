@@ -19,18 +19,66 @@ namespace WindowsFormsApp3
         }
 
         private Form1 form1 = new Form1();
-
+        bool changes;
         private void Form2_Load(object sender, EventArgs e)
         {
             LabelText();
-            ChekedCheckBox();
+            checkBox1_CheckedChanged(sender,e);
+
+
         }
-        bool changes;
+        
         private void ChekedCheckBox() {
             changes = checkBox1.Checked ? true : false;
             TextForTextBox(changes);
         }
-        
+
+        /*private void ValueTextBox() {
+            textBox1.Text = TextB1;
+            textBox2.Text = TextB2;
+            textBox3.Text = TextB3;
+            textBox4.Text = TextB4;
+            textBox5.Text = TextB5;
+            textBox6.Text = TextB6;
+            textBox7.Text = TextB7;
+            textBox8.Text = TextB8;
+            textBox9.Text = TextB9;
+            textBox10.Text = TextB10;
+            textBox11.Text = TextB11;
+            textBox12.Text = TextB12;
+            textBox13.Text = TextB13;
+            textBox14.Text = TextB14;
+            textBox15.Text = TextB15;
+            textBox16.Text = TextB16;
+            textBox17.Text = TextB17;
+            textBox18.Text = TextB18;
+            textBox19.Text = TextB19;
+            textBox20.Text = TextB20;
+            textBox21.Text = TextB21;
+            textBox22.Text = TextB22;
+            textBox23.Text = TextB23;
+            textBox24.Text = TextB24;
+            textBox25.Text = TextB25;
+            textBox26.Text = TextB26;
+            textBox27.Text = TextB27;
+            textBox28.Text = TextB28;
+            textBox29.Text = TextB29;
+            textBox30.Text = TextB30;
+            textBox31.Text = TextB31;
+            textBox32.Text = TextB32;
+            textBox33.Text = TextB33;
+            textBox34.Text = TextB34;
+            textBox35.Text = TextB35;
+            textBox36.Text = TextB36;
+            textBox37.Text = TextB37;
+            textBox38.Text = TextB38;
+            textBox39.Text = TextB39;
+            textBox40.Text = TextB40;
+            textBox41.Text = TextB41;
+            textBox42.Text = TextB42;
+            textBox43.Text = TextB43;
+        }
+        */
         private void TextForTextBox(bool changes) {
             //[первый операнд - условие] ? [второй операнд] : [третий операнд]
             textBox1.Enabled = changes;
@@ -106,6 +154,17 @@ namespace WindowsFormsApp3
             toolTip1.SetToolTip(label24, LabelTextInfo.DesLabel24);
             toolTip1.SetToolTip(label23, LabelTextInfo.DesLabel23);
             toolTip1.SetToolTip(label22, LabelTextInfo.DesLabel22);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            button1.Text = checkBox1.Checked ? "Сохранить" : "Закрыть";
+            ChekedCheckBox();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             if (changes) { } else { this.Close(); }
         }
     }
 }
