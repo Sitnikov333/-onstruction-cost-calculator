@@ -38,7 +38,7 @@ namespace WindowsFormsApp3
 
         private void ValueTextBox() {
             textBox1.Text = LTI.TextB1.ToString();
-            textBox2.Text = Settings.Default["TextB2"].ToString(); //'это работает остальное нет
+            textBox2.Text = LTI.TextB2.ToString();
             textBox3.Text = LTI.TextB3.ToString();
             textBox4.Text = LTI.TextB4.ToString();
             textBox5.Text = LTI.TextB5.ToString();
@@ -213,6 +213,7 @@ namespace WindowsFormsApp3
             LTI.TextB42 = Convert.ToInt32(textBox42.Text);
             LTI.TextB43 = Convert.ToInt32(textBox43.Text);
             LTI.SafeNewValueTextBox();
+            Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

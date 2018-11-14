@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.основноеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.коэффициентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1192,9 +1193,6 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "groupBox11";
             // 
-            // toolTip1
-            // 
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1208,9 +1206,12 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox11);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Стоимость строительства";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
