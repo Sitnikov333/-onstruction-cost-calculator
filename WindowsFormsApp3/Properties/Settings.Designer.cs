@@ -25,7 +25,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB7 {
             get {
                 return ((int)(this["TextB7"]));
@@ -37,7 +37,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB20 {
             get {
                 return ((int)(this["TextB20"]));
@@ -49,7 +49,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB14 {
             get {
                 return ((int)(this["TextB14"]));
@@ -61,7 +61,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB13 {
             get {
                 return ((int)(this["TextB13"]));
@@ -73,7 +73,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB17 {
             get {
                 return ((int)(this["TextB17"]));
@@ -85,7 +85,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2240")]
         public int TextB1 {
             get {
                 return ((int)(this["TextB1"]));
@@ -97,7 +97,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB6 {
             get {
                 return ((int)(this["TextB6"]));
@@ -109,7 +109,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2480")]
         public int TextB2 {
             get {
                 return ((int)(this["TextB2"]));
@@ -121,7 +121,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("3400")]
         public int TextB3 {
             get {
                 return ((int)(this["TextB3"]));
@@ -133,7 +133,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB5 {
             get {
                 return ((int)(this["TextB5"]));
@@ -145,7 +145,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB4 {
             get {
                 return ((int)(this["TextB4"]));
@@ -157,7 +157,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB19 {
             get {
                 return ((int)(this["TextB19"]));
@@ -169,7 +169,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB18 {
             get {
                 return ((int)(this["TextB18"]));
@@ -181,7 +181,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB12 {
             get {
                 return ((int)(this["TextB12"]));
@@ -193,7 +193,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB16 {
             get {
                 return ((int)(this["TextB16"]));
@@ -205,7 +205,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB9 {
             get {
                 return ((int)(this["TextB9"]));
@@ -217,7 +217,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB8 {
             get {
                 return ((int)(this["TextB8"]));
@@ -229,7 +229,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB11 {
             get {
                 return ((int)(this["TextB11"]));
@@ -241,7 +241,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB10 {
             get {
                 return ((int)(this["TextB10"]));
@@ -253,7 +253,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB15 {
             get {
                 return ((int)(this["TextB15"]));
@@ -265,7 +265,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB21 {
             get {
                 return ((int)(this["TextB21"]));
@@ -277,7 +277,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB22 {
             get {
                 return ((int)(this["TextB22"]));
@@ -289,7 +289,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB23 {
             get {
                 return ((int)(this["TextB23"]));
@@ -301,7 +301,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB24 {
             get {
                 return ((int)(this["TextB24"]));
@@ -313,7 +313,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB25 {
             get {
                 return ((int)(this["TextB25"]));
@@ -325,7 +325,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB26 {
             get {
                 return ((int)(this["TextB26"]));
@@ -337,7 +337,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB27 {
             get {
                 return ((int)(this["TextB27"]));
@@ -349,7 +349,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB28 {
             get {
                 return ((int)(this["TextB28"]));
@@ -361,7 +361,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB29 {
             get {
                 return ((int)(this["TextB29"]));
@@ -373,7 +373,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB30 {
             get {
                 return ((int)(this["TextB30"]));
@@ -385,7 +385,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB31 {
             get {
                 return ((int)(this["TextB31"]));
@@ -397,7 +397,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB32 {
             get {
                 return ((int)(this["TextB32"]));
@@ -409,7 +409,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB33 {
             get {
                 return ((int)(this["TextB33"]));
@@ -421,7 +421,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB34 {
             get {
                 return ((int)(this["TextB34"]));
@@ -433,7 +433,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB35 {
             get {
                 return ((int)(this["TextB35"]));
@@ -445,7 +445,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB36 {
             get {
                 return ((int)(this["TextB36"]));
@@ -457,7 +457,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TextB37 {
             get {
                 return ((int)(this["TextB37"]));
@@ -469,7 +469,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("350")]
         public int TextB38 {
             get {
                 return ((int)(this["TextB38"]));
@@ -481,7 +481,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("540")]
         public int TextB39 {
             get {
                 return ((int)(this["TextB39"]));
@@ -493,7 +493,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("720")]
         public int TextB40 {
             get {
                 return ((int)(this["TextB40"]));
@@ -505,7 +505,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("920")]
         public int TextB41 {
             get {
                 return ((int)(this["TextB41"]));
@@ -517,7 +517,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1250")]
         public int TextB42 {
             get {
                 return ((int)(this["TextB42"]));
@@ -529,7 +529,7 @@ namespace WindowsFormsApp3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("3920")]
         public int TextB43 {
             get {
                 return ((int)(this["TextB43"]));

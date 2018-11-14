@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LabTexInf;
+using WindowsFormsApp3.Properties;
+
 
 namespace WindowsFormsApp3
 {
@@ -17,14 +19,15 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
-
+        private LabelTextInfo LTI = new LabelTextInfo();
         private Form1 form1 = new Form1();
         bool changes;
         private void Form2_Load(object sender, EventArgs e)
         {
             LabelText();
+            ValueTextBox();
             checkBox1_CheckedChanged(sender,e);
-
+            
 
         }
         
@@ -33,52 +36,55 @@ namespace WindowsFormsApp3
             TextForTextBox(changes);
         }
 
-        /*private void ValueTextBox() {
-            textBox1.Text = TextB1;
-            textBox2.Text = TextB2;
-            textBox3.Text = TextB3;
-            textBox4.Text = TextB4;
-            textBox5.Text = TextB5;
-            textBox6.Text = TextB6;
-            textBox7.Text = TextB7;
-            textBox8.Text = TextB8;
-            textBox9.Text = TextB9;
-            textBox10.Text = TextB10;
-            textBox11.Text = TextB11;
-            textBox12.Text = TextB12;
-            textBox13.Text = TextB13;
-            textBox14.Text = TextB14;
-            textBox15.Text = TextB15;
-            textBox16.Text = TextB16;
-            textBox17.Text = TextB17;
-            textBox18.Text = TextB18;
-            textBox19.Text = TextB19;
-            textBox20.Text = TextB20;
-            textBox21.Text = TextB21;
-            textBox22.Text = TextB22;
-            textBox23.Text = TextB23;
-            textBox24.Text = TextB24;
-            textBox25.Text = TextB25;
-            textBox26.Text = TextB26;
-            textBox27.Text = TextB27;
-            textBox28.Text = TextB28;
-            textBox29.Text = TextB29;
-            textBox30.Text = TextB30;
-            textBox31.Text = TextB31;
-            textBox32.Text = TextB32;
-            textBox33.Text = TextB33;
-            textBox34.Text = TextB34;
-            textBox35.Text = TextB35;
-            textBox36.Text = TextB36;
-            textBox37.Text = TextB37;
-            textBox38.Text = TextB38;
-            textBox39.Text = TextB39;
-            textBox40.Text = TextB40;
-            textBox41.Text = TextB41;
-            textBox42.Text = TextB42;
-            textBox43.Text = TextB43;
+        private void ValueTextBox() {
+            textBox1.Text = LTI.TextB1.ToString();
+            textBox2.Text = Settings.Default["TextB2"].ToString(); //'это работает остальное нет
+            textBox3.Text = LTI.TextB3.ToString();
+            textBox4.Text = LTI.TextB4.ToString();
+            textBox5.Text = LTI.TextB5.ToString();
+            textBox6.Text = LTI.TextB6.ToString();
+            textBox7.Text = LTI.TextB7.ToString();
+            textBox8.Text = LTI.TextB8.ToString();
+            textBox9.Text = LTI.TextB9.ToString();
+            textBox10.Text = LTI.TextB10.ToString();
+            textBox11.Text = LTI.TextB11.ToString();
+            textBox12.Text = LTI.TextB12.ToString();
+            textBox13.Text = LTI.TextB13.ToString();
+            textBox14.Text = LTI.TextB14.ToString();
+            textBox15.Text = LTI.TextB15.ToString();
+            textBox16.Text = LTI.TextB16.ToString();
+            textBox17.Text = LTI.TextB17.ToString();
+            textBox18.Text = LTI.TextB18.ToString();
+            textBox19.Text = LTI.TextB19.ToString();
+            textBox20.Text = LTI.TextB20.ToString();
+            textBox21.Text = LTI.TextB21.ToString();
+            textBox22.Text = LTI.TextB22.ToString();
+            textBox23.Text = LTI.TextB23.ToString();
+            textBox24.Text = LTI.TextB24.ToString();
+            textBox25.Text = LTI.TextB25.ToString();
+            textBox26.Text = LTI.TextB26.ToString();
+            textBox27.Text = LTI.TextB27.ToString();
+            textBox28.Text = LTI.TextB28.ToString();
+            textBox29.Text = LTI.TextB29.ToString();
+            textBox30.Text = LTI.TextB30.ToString();
+            textBox31.Text = LTI.TextB31.ToString();
+            textBox32.Text = LTI.TextB32.ToString();
+            textBox33.Text = LTI.TextB33.ToString();
+            textBox34.Text = LTI.TextB34.ToString();
+            textBox35.Text = LTI.TextB35.ToString();
+            textBox36.Text = LTI.TextB36.ToString();
+            textBox37.Text = LTI.TextB37.ToString();
+            textBox38.Text = LTI.TextB38.ToString();
+            textBox39.Text = LTI.TextB39.ToString();
+            textBox40.Text = LTI.TextB40.ToString();
+            textBox41.Text = LTI.TextB41.ToString();
+            textBox42.Text = LTI.TextB42.ToString();
+            textBox43.Text = LTI.TextB43.ToString();
         }
-        */
+        
+        private void SaveValue() {
+
+        }
         private void TextForTextBox(bool changes) {
             //[первый операнд - условие] ? [второй операнд] : [третий операнд]
             textBox1.Enabled = changes;
@@ -161,10 +167,57 @@ namespace WindowsFormsApp3
             button1.Text = checkBox1.Checked ? "Сохранить" : "Закрыть";
             ChekedCheckBox();
         }
+        
+        private void SafeValue() {
+            LTI.TextB1 = Convert.ToInt32(textBox1.Text);
+            LTI.TextB2 = Convert.ToInt32(textBox2.Text);
+            LTI.TextB3 = Convert.ToInt32(textBox3.Text);
+            LTI.TextB4 = Convert.ToInt32(textBox4.Text);
+            LTI.TextB5 = Convert.ToInt32(textBox5.Text);
+            LTI.TextB6 = Convert.ToInt32(textBox6.Text);
+            LTI.TextB7 = Convert.ToInt32(textBox7.Text);
+            LTI.TextB8 = Convert.ToInt32(textBox8.Text);
+            LTI.TextB9 = Convert.ToInt32(textBox9.Text);
+            LTI.TextB10 = Convert.ToInt32(textBox10.Text);
+            LTI.TextB11 = Convert.ToInt32(textBox11.Text);
+            LTI.TextB12 = Convert.ToInt32(textBox12.Text);
+            LTI.TextB13 = Convert.ToInt32(textBox13.Text);
+            LTI.TextB14 = Convert.ToInt32(textBox14.Text);
+            LTI.TextB15 = Convert.ToInt32(textBox15.Text);
+            LTI.TextB16 = Convert.ToInt32(textBox16.Text);
+            LTI.TextB17 = Convert.ToInt32(textBox17.Text);
+            LTI.TextB18 = Convert.ToInt32(textBox18.Text);
+            LTI.TextB19 = Convert.ToInt32(textBox19.Text);
+            LTI.TextB20 = Convert.ToInt32(textBox20.Text);
+            LTI.TextB21 = Convert.ToInt32(textBox21.Text);
+            LTI.TextB22 = Convert.ToInt32(textBox22.Text);
+            LTI.TextB23 = Convert.ToInt32(textBox23.Text);
+            LTI.TextB24 = Convert.ToInt32(textBox24.Text);
+            LTI.TextB25 = Convert.ToInt32(textBox25.Text);
+            LTI.TextB26 = Convert.ToInt32(textBox26.Text);
+            LTI.TextB27 = Convert.ToInt32(textBox27.Text);
+            LTI.TextB28 = Convert.ToInt32(textBox28.Text);
+            LTI.TextB29 = Convert.ToInt32(textBox29.Text);
+            LTI.TextB30 = Convert.ToInt32(textBox30.Text);
+            LTI.TextB31 = Convert.ToInt32(textBox31.Text);
+            LTI.TextB32 = Convert.ToInt32(textBox32.Text);
+            LTI.TextB33 = Convert.ToInt32(textBox33.Text);
+            LTI.TextB34 = Convert.ToInt32(textBox34.Text);
+            LTI.TextB35 = Convert.ToInt32(textBox35.Text);
+            LTI.TextB36 = Convert.ToInt32(textBox36.Text);
+            LTI.TextB37 = Convert.ToInt32(textBox37.Text);
+            LTI.TextB38 = Convert.ToInt32(textBox38.Text);
+            LTI.TextB39 = Convert.ToInt32(textBox39.Text);
+            LTI.TextB40 = Convert.ToInt32(textBox40.Text);
+            LTI.TextB41 = Convert.ToInt32(textBox41.Text);
+            LTI.TextB42 = Convert.ToInt32(textBox42.Text);
+            LTI.TextB43 = Convert.ToInt32(textBox43.Text);
+            LTI.SafeNewValueTextBox();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-             if (changes) { } else { this.Close(); }
+             if (changes) { SafeValue(); } else { this.Close(); }
         }
     }
 }
