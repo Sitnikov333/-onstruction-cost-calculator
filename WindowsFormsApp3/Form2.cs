@@ -82,9 +82,6 @@ namespace WindowsFormsApp3
             textBox43.Text = LTI.TextB43.ToString();
         }
         
-        private void SaveValue() {
-
-        }
         private void TextForTextBox(bool changes) {
             //[первый операнд - условие] ? [второй операнд] : [третий операнд]
             textBox1.Enabled = changes;
@@ -168,7 +165,7 @@ namespace WindowsFormsApp3
             ChekedCheckBox();
         }
         
-        private void SafeValue() {
+        private void SaveValue() {
             LTI.TextB1 = Convert.ToInt32(textBox1.Text);
             LTI.TextB2 = Convert.ToInt32(textBox2.Text);
             LTI.TextB3 = Convert.ToInt32(textBox3.Text);
@@ -218,7 +215,7 @@ namespace WindowsFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-             if (changes) { SafeValue(); } else { this.Close(); }
+             if (changes) { SaveValue(); } else { this.Close(); }
         }
     }
 }
