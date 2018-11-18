@@ -136,6 +136,7 @@
             this.label52 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -192,7 +193,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(180, 38);
+            this.label1.Location = new System.Drawing.Point(180, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 13);
             this.label1.TabIndex = 1;
@@ -201,7 +202,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(316, 16);
+            this.label2.Location = new System.Drawing.Point(316, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 13);
             this.label2.TabIndex = 2;
@@ -210,7 +211,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(304, 60);
+            this.label3.Location = new System.Drawing.Point(304, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 13);
             this.label3.TabIndex = 3;
@@ -230,7 +231,6 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Фундамент";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton3
             // 
@@ -295,15 +295,15 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(491, 60);
+            this.label7.Location = new System.Drawing.Point(481, 66);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 13);
+            this.label7.Size = new System.Drawing.Size(13, 13);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Стоймость";
+            this.label7.Text = "0";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(484, 13);
+            this.textBox1.Location = new System.Drawing.Point(484, 19);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(69, 20);
             this.textBox1.TabIndex = 6;
@@ -1225,6 +1225,7 @@
             // 
             // groupBox11
             // 
+            this.groupBox11.Controls.Add(this.label20);
             this.groupBox11.Controls.Add(this.label2);
             this.groupBox11.Controls.Add(this.label1);
             this.groupBox11.Controls.Add(this.label3);
@@ -1235,7 +1236,15 @@
             this.groupBox11.Size = new System.Drawing.Size(571, 97);
             this.groupBox11.TabIndex = 28;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "groupBox11";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(481, 44);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(13, 13);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "0";
             // 
             // Form1
             // 
@@ -1392,6 +1401,7 @@
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem просмотрИзменитьToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label label20;
     }
 }
 
